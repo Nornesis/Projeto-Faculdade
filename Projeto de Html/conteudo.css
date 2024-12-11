@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.800);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+header img.logo-runeterra {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f0b429;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#top {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "regioes-conteudo";
+    gap: 20px;
+}
+
+.regioes-conteudo {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.regiao-conteudo {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.regiao-conteudo h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.regiao-conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.regiao-conteudo strong {
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.800);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer img.logo-runeterra {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+        padding: 10px;
+    }
+
+    .regioes-conteudo {
+        margin: 0;
+    }
+    
+    .regiao-conteudo {
+        padding: 15px;
+    }
+
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #top {
+        font-size: 22px;
+    }
+
+    .regiao-conteudo h2 {
+        font-size: 20px;
+    }
+
+    .regiao-conteudo p {
+        font-size: 14px;
+    }
+
+    footer img.logo-runeterra {
+        height: 35px;
+    }
+}
